@@ -1,0 +1,11 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'cics-genapp-pojos'
+
+include 'genapp'
+include 'cics-genapp-pojos-cicsbundle'

@@ -1,0 +1,27 @@
+plugins {
+  id 'com.ibm.cics.bundle' version '1.0.5'
+}
+
+repositories {
+  mavenCentral()
+}
+
+cicsBundle {
+    build {
+        defaultJVMServer = project.jvmserver
+    }
+    deploy {
+        cicsplex = project.cicsplex
+        region   = project.region
+        bunddef  = project.bundle
+        csdgroup = project.csdgroup
+        url      = project.cmciUrl
+        username = project.cicsUser
+        password = project.cicsPass
+        insecure = project.insecure
+    }
+}
+
+dependencies {
+  cicsBundlePart project(path:':genapp', configuration: 'archives')
+}
