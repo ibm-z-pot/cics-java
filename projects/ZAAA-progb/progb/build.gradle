@@ -1,0 +1,23 @@
+plugins {
+  id 'biz.aQute.bnd.builder' version "6.3.0"
+}
+
+repositories {
+  mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+jar {
+    bundle{
+        bnd (
+                'Bundle-SymbolicName': 'com.ibmzpot.demo',
+                'CICS-MainClass': 'com.ibmzpot.demo.HelloGoodbye'
+        )
+    }
+}
+
+dependencies {
+  compileOnly enforcedPlatform('com.ibm.cics:com.ibm.cics.ts.bom:6.1-20220617120000')
+  compileOnly("com.ibm.cics:com.ibm.cics.server")
+}
