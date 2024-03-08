@@ -1,0 +1,16 @@
+plugins {
+  id 'war'
+}
+
+repositories {
+  mavenCentral()
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+  compileOnly enforcedPlatform('com.ibm.cics:com.ibm.cics.ts.bom:6.1-20220617120000')
+  compileOnly("com.ibm.cics:com.ibm.cics.server")
+  compileOnly group: 'jakarta.platform', name: 'jakarta.jakartaee-api', version: '9.1.0'
+  compileOnly group: 'jakarta.json', name: 'jakarta.json-api', version: '2.0.0'
+}
