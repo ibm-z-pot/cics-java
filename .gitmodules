@@ -1,3 +1,6 @@
 [submodule "projects/ZLAA-cics-config"]
 	path = projects/ZLAA-cics-config
 	url = https://github.com/ibm-z-pot/ZLAA-cics-config
+[submodule "projects/ZJAA-cics-progb"]
+	path = projects/ZJAA-cics-progb
+	url = https://github.com/ibm-z-pot/ZJAA-cics-progb
