@@ -1,0 +1,3 @@
+[submodule "projects/ZLAA-cics-config"]
+	path = projects/ZLAA-cics-config
+	url = https://github.com/ibm-z-pot/ZLAA-cics-config
