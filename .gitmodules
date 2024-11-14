@@ -4,3 +4,6 @@
 [submodule "projects/ZJAA-cics-progb"]
 	path = projects/ZJAA-cics-progb
 	url = https://github.com/ibm-z-pot/ZJAA-cics-progb
+[submodule "projects/cobol-java-interop-framework"]
+	path = projects/cobol-java-interop-framework
+	url = https://github.com/ibm-z-pot/cobol-java-interop-framework
